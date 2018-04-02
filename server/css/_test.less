@@ -1,0 +1,17 @@
+@containerWidth: 1200px; 
+// 正确的嵌套和&用法
+.con{
+    width:@containerWidth;
+    ul{
+        width:200px;
+        p{
+            width:100px;
+            a{
+                color:#f40;
+                &:hover{
+                    color:blue;
+                }
+            }
+        }
+    }
+}
